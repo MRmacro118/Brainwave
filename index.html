@@ -3,51 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Tiles</title>
+    <title>Faculty</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
         .container {
             display: flex;
-            justify-content: space-around;
             flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
         }
         .tile {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 16px;
-            margin: 8px;
-            text-align: center;
-            width: 30%;
+            background-color: #fff;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            width: 200px;
+            transition: transform 0.3s;
+        }
+        .tile:hover {
+            transform: translateY(-10px);
         }
         .tile img {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
+            width: 100%;
+            height: auto;
         }
         .tile h3 {
-            margin: 8px 0;
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+            color: #333;
         }
         .tile p {
-            color: #666;
+            margin: 0 0 10px;
+            color: #777;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="tile">
-            <img src="Haseeb.png" alt="Person 1">
-            <h3>Person 1</h3>
-            <p>Subject 1</p>
+            <img src="faculty/Haseeb.png" alt="Person 1">
+            <h3>Dr Haseeb</h3>
+            <p>Biology</p>
         </div>
         <div class="tile">
-            <img src="sulfiker.png" alt="Person 2">
-            <h3>Person 2</h3>
-            <p>Subject 2</p>
+            <img src="faculty/sulfiker.png" alt="Person 2">
+            <h3>sulfikar</h3>
+            <p>Hindi</p>
         </div>
         <div class="tile">
-            <img src="photo3.jpg" alt="Person 3">
-            <h3>Person 3</h3>
-            <p>Subject 3</p>
+            <img src="faculty/sabith.png" alt="Person 3">
+            <h3>Sabith</h3>
+            <p>Mathematics</p>
         </div>
     </div>
 </body>

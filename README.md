@@ -61,9 +61,3 @@ Contributions are what make the open-source community such an amazing place to l
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contact
-
-Your Name - [your-email@example.com](mailto:your-email@example.com)
-
-Project Link: [https://github.com/your-username/brainwave-tuition-centre](https://github.com/your-username/brainwave-tuition-centre)

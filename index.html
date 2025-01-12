@@ -50,6 +50,15 @@
             margin: 0 0 10px;
             color: #777;
         }
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .tile {
+                width: 90%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -61,18 +70,13 @@
         </div>
         <div class="tile">
             <img src="faculty/Sulfiker.png" alt="Person 2">
-            <h3>sulfikar</h3>
+            <h3>Sulfikar</h3>
             <p>Hindi</p>
         </div>
         <div class="tile">
             <img src="faculty/Sabith.png" alt="Person 3">
             <h3>Sabith</h3>
             <p>Mathematics</p>
-        </div>
-        <div class="tile">
-            <img src="faculty/Suhail.png" alt="Person 3">
-            <h3>Suhail</h3>
-            <p>Geography</p>
         </div>
     </div>
 </body>

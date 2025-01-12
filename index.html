@@ -3,71 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faculty Members</title>
+    <title>Profile Tiles</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
+        .tile {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 8px;
+            text-align: center;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
+        .tile img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
         }
-        header ul {
-            padding: 0;
-            list-style: none;
+        .tile h3 {
+            margin: 8px 0;
         }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        .faculty-list {
-            margin: 20px 0;
-        }
-        .faculty-member {
-            background: #fff;
-            margin-bottom: 10px;
-            padding: 10px;
-            border: #ccc 1px solid;
+        .tile p {
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Our Faculty</h1>
-        </div>
-    </header>
     <div class="container">
-        <div class="faculty-list">
-            <div class="faculty-member">
-                <h2>John Doe</h2>
-                <p>Subject: Mathematics</p>
-                <p>Email: john.doe@example.com</p>
-            </div>
-            <div class="faculty-member">
-                <h2>Jane Smith</h2>
-                <p>Subject: Physics</p>
-                <p>Email: jane.smith@example.com</p>
-            </div>
-            <!-- Add more faculty members as needed -->
+        <div class="tile">
+            <img src="photo1.jpg" alt="Person 1">
+            <h3>Person 1</h3>
+            <p>Subject 1</p>
+        </div>
+        <div class="tile">
+            <img src="photo2.jpg" alt="Person 2">
+            <h3>Person 2</h3>
+            <p>Subject 2</p>
+        </div>
+        <div class="tile">
+            <img src="photo3.jpg" alt="Person 3">
+            <h3>Person 3</h3>
+            <p>Subject 3</p>
         </div>
     </div>
 </body>
